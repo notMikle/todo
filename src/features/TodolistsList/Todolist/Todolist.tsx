@@ -50,6 +50,7 @@ export const Todolist = React.memo(function (props: PropsType) {
     () => props.changeFilter("all", props.todolist.id),
     [props.todolist.id, props.changeFilter],
   );
+
   const onActiveClickHandler = useCallback(
     () => props.changeFilter("active", props.todolist.id),
     [props.todolist.id, props.changeFilter],

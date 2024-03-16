@@ -1,5 +1,6 @@
 {
   "name": "it-incubator-todolist-ts",
+  "homepage": "https://mikhailst1ff.github.io/todo",
   "jest": {
     "moduleNameMapper": {
       "axios": "axios/dist/node/axios.cjs"
@@ -19,11 +20,12 @@
     "@testing-library/user-event": "^14.5.1",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.5",
-    "@types/react": "^18.2.45",
+    "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@types/uuid": "^9.0.7",
     "axios": "^1.6.3",
     "formik": "^2.4.5",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.0.4",
@@ -37,7 +39,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -56,5 +60,8 @@
   },
   "devDependencies": {
     "prettier": "^3.1.1"
+  },
+  "overrides": {
+    "@types/react": "^18.0.0"
   }
 }
