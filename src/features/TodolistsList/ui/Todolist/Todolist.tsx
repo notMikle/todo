@@ -27,7 +27,7 @@ export const Todolist = React.memo(function (props: PropsType) {
   return (
     <div>
       <TodoTitle todolist={props.todolist} />
-      <AddItemForm addItem={addTaskCallback} disabled={props.todolist.entityStatus === "loading"} />
+      <AddItemForm addItem={addTaskCallback} disabled={props.todolist.entityStatus === "loading"} label={'add new task'} />
       <Tasks todolist={props.todolist} tasks={props.tasks} />
       <div style={{ paddingTop: "10px" }}>
         <FilterTasksButtons todolist={props.todolist} />
