@@ -17,7 +17,6 @@ export const AddItemForm = React.memo(function ({addItem, label, disabled = fals
         if (title.trim() !== "") {
             addItem(title)
                 .then((res) => {
-                    debugger;
                     setTitle("");
                 })
                 .catch((err: BaseResponseType) => {

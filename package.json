@@ -1,6 +1,6 @@
 {
   "name": "it-incubator-todolist-ts",
-  "homepage": "https://mikhailst1ff.github.io/todo",
+  "homepage": "https://mikhailst1ff.github.io",
   "jest": {
     "moduleNameMapper": {
       "axios": "axios/dist/node/axios.cjs"
@@ -8,6 +8,7 @@
   },
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@babel/runtime": "^7.23.6",
     "@emotion/react": "^11.11.3",
